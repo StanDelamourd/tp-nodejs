@@ -1,4 +1,4 @@
-function chaine(a, b){
+function calcul(a, b){
     return new Promise((successCallback, failureCallback) => {
       if(a > b){
           const c = a-b;
@@ -14,6 +14,5 @@ function chaine(a, b){
   function failureCallback(erreur){
     console.error("échouer");
   }
-  
-  const promise=chaine(40,30);
+  const promise=calcul(40,30);
   promise.then(successCallback, failureCallback);
